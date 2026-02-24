@@ -1,4 +1,4 @@
-/* Torpid Travelers CSS */
+/* Raster Roster CSS */
 
 body {
     font-family: "Oxygen", sans-serif;
@@ -14,7 +14,7 @@ header {
 }
 
 header span {
-    color: #024873;
+    color: #576773;
     font-size: 1.6rem;
     font-weight: 700;
 }
@@ -22,7 +22,7 @@ header span {
 
 /* Navigation */
 nav {
-    background-color: #f2b705;
+    background-color: #f0c043;
 }
 
 nav ul {
@@ -35,15 +35,15 @@ nav ul {
 nav a {
     font-size: 1.2rem;
     text-decoration: none;
-    color: #024873;
+    color: #576773;
     font-weight: 700;
     display: block;
     padding: .8rem 2rem;
 }
 
 nav li.active a {
-    background-color: #024873;
-    color: #f2b705;
+    background-color: #576773;
+    color: #f0c043;
 }
 
 nav li a:hover {
@@ -56,17 +56,17 @@ main {
 }
 
 main h1 {
-    color: #b40412;
+    color: #f09047;
 }
 
 main h2 {
-    color: #024873;
+    color: #576773;
     margin-bottom: .2rem;
 }
 
 main p {
     margin: 0;
-    color: #333;
+    color: #534a33;
 }
 
 main ol {
@@ -79,13 +79,13 @@ main ol li {
 }
 
 main dl dt {
-    color: #b40412;
+    color: #f09047;
     font-weight: 700;
     margin-top: 1rem;
 }
 
 main dl dd {
-    color: #024873;
+    color: #576773;
     font-size: .9rem;
     margin-left: 20px;
 }
@@ -102,7 +102,7 @@ main ul li {
 
 main strong {
     font-weight: 700;
-    color: #000;
+    color: #47382d;
 }
 
 main em {
@@ -111,19 +111,40 @@ main em {
 
 main address {
     font-style: normal;
-    background-color: #f2b705;
+    background-color: #f0c043;
     padding: .5rem;
     border-radius: 10px;
-    border: 1px solid #024873;
+    border: 1px solid #576773;
     width: 200px;
 }
 
 main a {
-    color: #024873;
+    color: #576773;
 }
 
 main a:hover {
     color: rgb(180, 4, 18);
+}
+
+div.tutorial_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+    padding: 20px 10px;
+    background-color: #efefef;
+}
+
+div.tutorial_container figure {
+    margin: 0;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+div.tutorial_container figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #b64e11;
 }
 
 /*Footer*/
@@ -136,6 +157,6 @@ footer {
 footer p {
     margin: 0;
     font-size: .8rem;
-    color: #333;
+    color: #534a33;
     letter-spacing: 3px;
 }
