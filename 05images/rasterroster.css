@@ -126,6 +126,17 @@ main a:hover {
     color: rgb(180, 4, 18);
 }
 
+figure.wrapped {
+    margin: 0 0 0 10px;
+    width: 40%;
+    float: right;
+}
+
+figure.wrapped img {
+    width: 100%;
+    height: auto;
+}
+
 div.tutorial_container {
     display: flex;
     flex-wrap: wrap;
@@ -144,7 +155,7 @@ div.tutorial_container figure {
 div.tutorial_container figcaption {
     text-align: center;
     font-size: .8rem;
-    color: #b64e11;
+    color: #576773;
 }
 
 /*Footer*/
