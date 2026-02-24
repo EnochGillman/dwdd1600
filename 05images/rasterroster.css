@@ -128,20 +128,26 @@ main a:hover {
 
 figure.wrapped {
     margin: 0 0 0 10px;
-    width: 40%;
+    width: 30%;
     float: right;
 }
 
 figure.wrapped img {
     width: 100%;
     height: auto;
+    border-radius: 10px;
+}
+
+figure.wrapped figcaption {
+    text-align: center;
 }
 
 div.tutorial_container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px 10px;
-    padding: 20px 10px;
+    padding: 20px;
+    border-radius: 10px;
     background-color: #efefef;
 }
 
@@ -152,10 +158,17 @@ div.tutorial_container figure {
     border-radius: 10px;
 }
 
+div.tutorial_container a figure img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
 div.tutorial_container figcaption {
     text-align: center;
     font-size: .8rem;
-    color: #576773;
+    width: auto;
+    height: auto;
 }
 
 /*Footer*/
@@ -163,6 +176,7 @@ footer {
     background-color: #eaeaea;
     text-align: center;
     padding: 1rem 0;
+    clear: both;
 }
 
 footer p {
