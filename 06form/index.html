@@ -23,44 +23,68 @@
 	<!-- start the page navigation -->
 	<nav>
 		<ul>
-			<li class="active"><a href="index.html">Home</a></li>
+			<li><a href="home.html">Home</a></li>
 			<li><a href="tutorials.html">Tutorials</a></li>
 			<li><a href="about.html">About</a></li>
-			<li><a href="feedback.html">Feedback</a></li>
+			<li class="active"><a href="index.html">Feedback</a></li>
 		</ul>
 
 	</nav>
 
 	<!-- start the main content -->
 	<main>
-		<h1>Home</h1>
+		<h1>Feedback</h1>
+		<p>Give the website feedback.</p>
 
-		<figure class="wrapped">
-			<img src="images/main_page.webp" alt="3D rendered crates" width="256" height="261"
-				loading="lazy">
-			<figcaption>3D rendered crates</figcaption>
-		</figure>
+		<form method="get" class="myForm" action="thanks.html">
+			<fieldset>
+				<legend>Personal Contact</legend>
+				<label>Email*<input type="email" name="email" placeholder="johndoe@email.com"
+						required></label>
+				<label>Phone<input type="tel" name="phone" placeholder="123-456-7890"></label>
+			</fieldset>
 
-		<p>Welcome to Raster Roster, a collection of resources aimed at teaching the fundamentals to 3D
-			graphics.</p>
+			<fieldset>
+				<legend>Which best describes you?</legend>
+				<label><input type="radio" name="method" value="student">I want to learn more about
+					shaders as a student.</label>
+				<label><input type="radio" name="method" value="student">I want to learn more about
+					shaders for my work.</label>
+				<label><input type="radio" name="method" value="hobby">I want to learn more about
+					shaders as a
+					hobby.</label>
+			</fieldset>
 
-		<h2>What you will learn</h2>
-		<p>In these tutorials, you will explore the fundamental concepts that allow us to send pixels to the
-			screen and create a 3D image. This website will delve into rasterization, the most popular
-			technique for real-time applications since the late 70's. Even in the advent of ray tracing,
-			rasterization remains the prefered rendering method for it's speed and simplicity.</p>
-		<p>Even if you later become interested in ray tracing, it is generally agreed upon that rasterization is
-			the better launch-pad for learning 3D graphics. The past several decades have given graphics
-			programmers time to design intuitive interfaces for rasterization, where ray tracing has not
-			been widely adopted until recently.</p>
-		<p>In order to apply what you'll be learning on this website, you'll be learning the <a
-				href="about.html#about_webgl">WebGL API</a>.</p>
+			<fieldset>
+				<legend>Why did you come to the website?</legend>
+				<label><input type="checkbox" name="learn" value="pipeline">To learn about the 3D
+					graphics
+					pipeline.</label>
+				<label><input type="checkbox" name="reinforce" value="glsl">To learn about GLSL (OpenGL
+					Shading Language).</label>
+				<label><input type="checkbox" name="practice" value="webgl">To learn about
+					WebGL.</label>
 
-		<h2>Accessing the tutorials</h2>
-		<p>Explore the various <a href="tutorials.html">Tutorials</a> on the website.</p>
+			</fieldset>
 
-		<h2>About the website</h2>
-		<p>You can find more information about this website in the <a href="about.html">About</a> page.</p>
+			<fieldset>
+				<legend>What would you like to share?</legend>
+				<label>What is the nature of your feedback?
+					<select name="time" required>
+						<option value="">Please Select</option>
+						<option value="help">Ask for Help</option>
+						<option value="critique">Give a Critique</option>
+						<option value="gratitude">Give Thanks</option>
+					</select>
+				</label>
+				<label>Feedback
+					<textarea name="feedback" placeholder="Write your feedback here."
+						required></textarea>
+				</label>
+			</fieldset>
+
+			<input type="submit" value="Send Feedback">
+		</form>
 
 	</main>
 
