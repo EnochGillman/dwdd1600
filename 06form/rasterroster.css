@@ -195,12 +195,14 @@ div.tutorial_container figcaption {
 .myForm select,
 .myForm [type=text],
 .myForm [type=tel],
+.myForm [type=email],
 .myForm textarea {
 	display: block;
 }
 
 .myForm [type=text],
 .myForm [type=tel],
+.myForm [type=email],
 .myForm select,
 .myForm textarea {
 	border: solid 1px #888;
