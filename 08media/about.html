@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Learn how to write shaders">
+	<meta name="author" content="Enoch Gillman">
+	<title>Raster Roster: Home</title>
+	<link rel="stylesheet" href="rasterroster.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+	<!-- start the page header -->
+	<header>
+		<img class="logo" src="images/logo.webp" alt="Raster Roster logo" width="128" height="128">
+		<span>Raster Roster</span>
+	</header>
+
+	<!-- start the page navigation -->
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="tutorials.html">Tutorials</a></li>
+			<li class="active"><a href="about.html">About</a></li>
+			<li><a href="feedback.html">Feedback</a></li>
+		</ul>
+
+	</nav>
+
+	<!-- start the main content -->
+	<main>
+		<h1>About</h1>
+		<p>Rastor Roster serves to showcase the essentials to 3D graphics. It accomplishes this by using the
+			WebGL API
+			so users can create their own 3D projects.</p>
+
+		<h2 id="about_webgl">What is WebGL?</h2>
+		<p>WebGL™ is a cross-platform, royalty-free open web standard for a low-level 3D graphics API based on
+			<a href="https://www.khronos.org/opengles/" target="_blank">OpenGL ES</a>, exposed to ECMAScript
+			via the HTML5 Canvas
+			element. Developers familiar with OpenGL ES 2.0 will recognize WebGL as a Shader-based API using
+			GLSL (GL
+			Shading Language), with constructs that are semantically similar to those of the underlying
+			OpenGL ES API.
+			It stays very close to the OpenGL ES specification, with some concessions made for what
+			developers expect
+			out of memory-managed languages such as JavaScript. WebGL 1.0 exposes the OpenGL ES 2.0 feature
+			set; WebGL
+			2.0 exposes the OpenGL ES 3.0 API.
+		</p>
+		<p>Description derived from The Khronos Group at <a href="https://www.khronos.org/webgl/"
+				target="_blank">https://www.khronos.org/webgl/</a></p>
+
+		<div style="display:flex; gap: 10px;">
+			<address>
+				9450 SW Gemini Drive #45043<br>
+				Beaverton, OR 97008<br>United States<br>
+				Phone: <a href="tel:+14158698627">+1 (415) 869-8627</a>
+			</address>
+			<iframe style="border-radius: 10px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.872786709774!2d-122.79453602432103!3d45.452219571073805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950c54f5cbbd55%3A0xd667437dbcbd2891!2s9450%20SW%20Gemini%20Dr%2C%20Beaverton%2C%20OR%2097008!5e0!3m2!1sen!2sus!4v1775592350155!5m2!1sen!2sus" width="80%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+
+		<h2>Structure</h2>
+		<p>Tutorials are split up into different sections. Each tutorial will showcase one or two ideas from the
+			broader
+			subject to make the content more digestible.</p>
+
+		<h2>Vocabulary</h2>
+		<dl>
+			<dt>Vectors</dt>
+			<dd>Mathematically speaking, Vectors are a collection of data with the same type (i.e. a
+				collection of
+				floating point numbers). You'll often come across Vectors with 2, 3, and 4 floating
+				point numbers in
+				graphics programming.</dd>
+			<dt>Vertices</dt>
+			<dd>These are typically Vector3, and represent different points that make up a 3D mesh.</dd>
+			<dt>Mesh</dt>
+			<dd>Meshes are organized collections of data which are used to draw various things to the
+				screen.</dd>
+		</dl>
+
+		<h2>Other Resources</h2>
+		<ul>
+			<li>
+				<p>If you'd like to learn how to use OpenGL with C++, <a href="https://learnopengl.com/Introduction" target="_blank">here</a> is a fantastic resource to follow.</p>
+			</li>
+			<li>
+				<p>There's also a good video series that covers the same subjects as the website mentioned above.</p>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/XpBGwZNyUh0?si=PBAFwq-nxc-uPuiK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</li>
+			<li>
+				<p>You can get a <a href="raster_roster_home.pdf">PDF copy of the main page here</a>.</p>
+			</li>
+		</ul>
+
+		<h2>A Word From the Website's Author</h2>
+		<audio controls>
+			<source src="word.mp3" type="audio/mp3">
+			<source src="word.ogg" type="audio/mpeg">
+		</audio>
+
+	</main>
+
+	<!-- start the page footer -->
+	<footer>
+		<p>&copy; 2025 &bull; Enoch Gilman &bull; Web Essentials</p>
+
+	</footer>
+
+</body>
+
+</html>
