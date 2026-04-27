@@ -1,0 +1,340 @@
+/* Budget Vacations CSS */
+
+/* prevent problems in different browsers */
+* {box-sizing: border-box;}
+
+body {
+	font-family: "Oxygen", sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	margin: 0;
+}
+
+/*Header*/
+header {
+	background-color: #eaeaea;
+	padding: 1rem 10px;
+	display: flex;
+	align-items: center;
+}
+
+header span {
+	color: #5087A1;
+	font-size: 1.6rem;
+	font-weight: 700;
+	padding-left: 1rem;
+}
+
+.logo {
+	width: auto;
+	height: 4rem;
+}
+
+
+/* small screen navigation */
+
+@media only screen and (max-width: 800px) {
+    nav ul {
+        margin: 0;
+        padding: 10px;
+	box-shadow: 0 6px 3px 3px #0005;
+	background-color: #eaeaea;
+    }
+    nav a {
+        display: block;
+        text-align: center;
+        padding: .8rem;
+	background-color: #EBE2A7;
+        color: #5087A1;
+        text-decoration: none;
+        border-bottom: solid 1px #5087A1;
+        font-weight: 700;
+        text-transform: uppercase;
+	margin: 0px 10px 10px 10px;
+	border-radius: 10px;
+    }
+    nav .active a {
+        background-color: #8C501B;
+        color: #EBE2A7;
+        background-image: linear-gradient(to bottom, #5087A1, #3d4e5a);
+    }
+}
+
+/* large screen navigation */
+
+@media only screen and (min-width: 801px) {
+	nav {
+		background-color: #EBE2A7;
+		box-shadow: 0 0 6px 6px #0005;
+	}
+
+	nav ul {
+		list-style-type: none;
+		padding: 0 2vw;
+		margin: 0;
+		display: flex;
+	}
+
+	nav a {
+		font-size: 1.2rem;
+		text-decoration: none;
+		color: #5087A1;
+		font-weight: 700;
+		display: block;
+		padding: .8rem 2rem;
+	}
+
+	nav li.active a {
+		background-color: #5087A1;
+		color: #EBE2A7;
+	}
+
+	nav li a:hover {
+		color: #ffffff;
+	}
+}
+
+/*Main*/
+main {
+	padding: 1rem 10px;
+}
+
+main h1 {
+	color: #F57A9D;
+}
+
+main h2 {
+	color: #5087A1;
+	margin-bottom: .2rem;
+}
+
+main p {
+	margin: 0;
+	color: #534a33;
+	margin-bottom: 10px;
+}
+
+main ol {
+	padding: .5rem 30px;
+	background-color: #efefef;
+}
+
+main ol li {
+	font-weight: 700;
+}
+
+main dl dt {
+	color: #F57A9D;
+	font-weight: 700;
+	margin-top: 1rem;
+}
+
+main dl dd {
+	color: #5087A1;
+	font-size: .9rem;
+	margin-left: 20px;
+}
+
+main ul {
+	list-style-type: circle;
+}
+
+main ul li {
+	line-height: 125%;
+	margin-bottom: .5rem;
+	font-size: .9rem;
+}
+
+main strong {
+	font-weight: 700;
+	color: #47382d;
+}
+
+main em {
+	font-weight: 300;
+}
+
+main address {
+	font-style: normal;
+	background-color: #EBE2A7;
+	padding: .5rem;
+	border-radius: 10px;
+	border: 1px solid #5087A1;
+	width: 200px;
+}
+
+main a {
+	color: #5087A1;
+}
+
+main a:hover {
+	color: rgb(180, 4, 18);
+}
+
+.package {
+	padding: 10px;
+	margin: 10px;
+	border-radius: 10px;
+	background-color: #efefef;
+}
+
+figure.wrapped {
+	margin: 0 0 0 10px;
+	width: 30%;
+	float: right;
+}
+
+figure.wrapped_left {
+	margin: 0 10px 0 0;
+	width: 30%;
+	float: left;
+}
+
+figure.wrapped img {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+}
+
+figure.wrapped figcaption {
+	text-align: center;
+}
+
+div.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px 10px;
+	padding: 20px;
+}
+
+div.gallery figure {
+	margin: 0;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: #efefef;
+}
+
+div.gallery a figure img {
+	border-radius: 10px;
+	width: 100%;
+	height: auto;
+}
+
+div.gallery figcaption {
+	text-align: center;
+	font-size: .8rem;
+	width: auto;
+	height: auto;
+}
+
+.hero {
+	width: 80%;
+	height: auto;
+	display: block;
+	margin: auto;
+}
+
+/* table stuff */
+table.purposes {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.purposes th {
+    background-color: #EBE2A7;
+    color: #3d4e5a;
+    padding: .6rem 2%;
+    text-align: left;
+}
+
+table.purposes td {
+    color: #5087A1;
+    padding: .4rem 2%;
+}
+
+table.purposes tr:nth-child(odd) {
+    background-color: #eaeaea;
+}
+
+table.purposes tr:hover {
+    background-color: #dadada;
+}
+
+.myForm fieldset {
+	border: 1px solid #5087A1;
+	border-radius: 3px;
+	margin-bottom: 1rem;
+}
+
+.myForm legend {
+	color: #5087A1;
+	font-weight: 700;
+}
+
+.myForm label {
+	margin: .5rem;
+}
+
+.myForm label {
+	margin: .5rem;
+}
+
+.myForm label,
+.myForm select,
+.myForm [type=text],
+.myForm [type=tel],
+.myForm [type=email],
+.myForm textarea {
+	display: block;
+}
+
+.myForm [type=text],
+.myForm [type=tel],
+.myForm [type=email],
+.myForm select,
+.myForm textarea {
+	border: solid 1px #888;
+	padding: .3rem;
+	width: 250px;
+	border-radius: .3rem;
+	font-family: "Oxygen", sans-serif;
+	font-weight: 300;
+}
+
+.myForm textarea {
+	height: 6rem;
+}
+
+.myForm :required {
+	background-color: rgba(156, 51, 53, 0.1);
+}
+
+.myForm [type=submit] {
+	background-color: #EBE2A7;
+	border: none;
+	padding: 1rem 2rem;
+	border-radius: 10px;
+	color: #5087A1;
+	font-weight: 700;
+	margin: 1rem 0 0 1vw;
+}
+
+/*Footer*/
+footer {
+	background-color: #eaeaea;
+	text-align: center;
+	padding: 1rem 0;
+	clear: both;
+}
+
+footer p {
+	margin: 0;
+	font-size: .8rem;
+	color: #534a33;
+	letter-spacing: 3px;
+}
+
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}

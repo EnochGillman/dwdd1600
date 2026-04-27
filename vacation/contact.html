@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Learn how to write shaders">
+	<meta name="author" content="Enoch Gillman">
+	<title>Budget Vacations: Home</title>
+	<link rel="stylesheet" href="vacation.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+	<!-- start the page header -->
+	<header>
+		<img class="logo" src="images/budget_vacations.webp" alt="Budget Vacations logo" width="128" height="128">
+		<span>Budget Vacations</span>
+	</header>
+
+	<!-- start the page navigation -->
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="destinations.html">Destinations</a></li>
+			<li><a href="video.html">Video</a></li>
+			<li><a href="packages.html">Packages</a></li>
+			<li class="active"><a href="contact.html">Contact Us</a></li>
+		</ul>
+
+	</nav>
+
+	<!-- start the main content -->
+	<main>
+		<h1>Contact Us</h1>
+
+		<p>Have a question? We're here to help!</p>
+
+		<form method="get" class="myForm" action="thanks.html">
+			<fieldset>
+				<legend>Personal Contact</legend>
+				<label>First Name*<input type="text" name="fname" placeholder="John" required></label>
+				<label>Last Name*<input type="text" name="lname" placeholder="Doe" required></label>
+				<label>Email*<input type="email" name="email" placeholder="johndoe@email.com"
+						required></label>
+				<label>Phone<input type="tel" name="phone" placeholder="123-456-7890"></label>
+			</fieldset>
+
+			<fieldset>
+				<legend>Which best describes you?</legend>
+				<label><input type="radio" name="method" value="student">I want to learn more about how Budget Vacations can help me save on my next vacation.</label>
+				<label><input type="radio" name="method" value="student">I'm ready to start planning my next vacation.</label>
+				<label><input type="radio" name="method" value="hobby">I need help in regards to the services provided by Budget Vacations.</label>
+			</fieldset>
+
+			<fieldset>
+				<legend>What do you have to say?</legend>
+				<label>What is the nature of your message?
+					<select name="time" required>
+						<option value="">Please Select</option>
+						<option value="schedule">Plan My Vacation</option>
+						<option value="help">Ask For Help</option>
+						<option value="bug">Report a Bug</option>
+					</select>
+				</label>
+				<label>Text Entry
+					<textarea name="feedback" placeholder="Write your message here."
+						required></textarea>
+				</label>
+			</fieldset>
+
+			<input type="submit" value="Send Feedback">
+		</form>
+
+	</main>
+
+	<!-- start the page footer -->
+	<footer>
+		<p>&copy; 2025 &bull; Enoch Gilman &bull; Web Essentials</p>
+
+	</footer>
+
+</body>
+
+</html>
